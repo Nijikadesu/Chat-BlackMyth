@@ -2,12 +2,15 @@ import os
 import gradio as gr
 from dotenv import load_dotenv
 from graphrag.graph import TinyGraph
+from graphrag.embedding.zhipu import zhipuEmb
+from graphrag.llm.zhipu import zhipuLLM
 from graphrag.embedding.bce import BCEEmb
 from graphrag.llm.qwen import Qwen2_5
 
 
 load_dotenv()
 
+use_zhipu_api = os.getenv('USE_ZHIPU_API')
 zhipu_api_key = os.getenv("ZHIPU_API_KEY")
 emb_name, llm_name = os.environ["EMB_NAME"], os.environ["LLM_NAME"]
 emb_url, llm_url = os.environ["EMB_URL"], os.environ["LLM_URL"]
@@ -16,6 +19,13 @@ neo4j_url, neo4j_username, neo4j_password = os.environ["NEO4J_URL"], os.environ[
 
 def init_graph(data_path):
     global emb, llm, graph
+
+    if use_zhipu_api == 'YES':
+        emb = zhipuEmb('embedding-3', zhipu_api_key)
+        llm = zhipuLLM('glm-4-flash', zhipu_api_key)
+    else:
+        emb = BCEEmb(emb_name, emb_url)
+        llm = Qwen2_5(llm_name, llm_url)
 
     emb = BCEEmb(emb_name, emb_url)
     llm = Qwen2_5(llm_name, llm_url)
