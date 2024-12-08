@@ -72,7 +72,7 @@ def write2md(role, level, description):
 if __name__ == '__main__':
 
     # _create_folder_if_not_exists('../data/portraits')
-    roleinfo_config = r"../load_data/roleinfo.json"
+    roleinfo_config = r"./roleinfo.json"
     with open (roleinfo_config, 'r', encoding='utf-8') as file:
         roleinfo = file.read()
     roleinfo_dict = json.loads(roleinfo)
