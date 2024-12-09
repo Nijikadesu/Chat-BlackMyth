@@ -164,18 +164,18 @@ python webdemo.py
 
 感谢以下优秀项目为本项目的顺利开展提供的宝贵指导与支持！
 
-[1] [TinyGraphRAG](https://github.com/limafang/tiny-graphrag)
+- [TinyGraphRAG](https://github.com/limafang/tiny-graphrag)
 
-[2] [天机：人情世故大模型](https://github.com/SocialAI-tianji/Tianji)
+- [天机：人情世故大模型](https://github.com/SocialAI-tianji/Tianji)
 
-[3] [self-llm: 开源大模型食用指南](https://github.com/datawhalechina/self-llm/tree/master)
+- [self-llm: 开源大模型食用指南](https://github.com/datawhalechina/self-llm/tree/master)
 
-[4] [影神图资料站](https://github.com/opsbear2/black-myth-wukong-portraits)
+- [影神图资料站](https://github.com/opsbear2/black-myth-wukong-portraits)
 
 感谢以下优秀项目为本项目 README 文件编写提供的宝贵参考！
 
-[1] [SwanDoc-Chat](https://github.com/little1d/SwanDoc-Chat/tree/main)
+- [SwanDoc-Chat](https://github.com/little1d/SwanDoc-Chat/tree/main)
 
-[2] [TinyGraphRAG](https://github.com/limafang/tiny-graphrag)
+- [TinyGraphRAG](https://github.com/limafang/tiny-graphrag)
 
 欢迎同学们前去点一个 star！向这些优秀而慷慨的开源工作者致敬！
